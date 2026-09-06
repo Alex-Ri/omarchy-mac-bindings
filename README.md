@@ -21,17 +21,20 @@ dofile(os.getenv("HOME") .. "/.config/omarchy-mac-bindings/bindings.lua")
 | Binding | Action |
 |---|---|
 | `SUPER + ←↑→↓` | Focus window in direction |
-| `SUPER + SHIFT + ←↑→↓` | Swap window in direction |
+| `SUPER + CTRL + ←↑→↓` | Swap window in direction |
+| `SUPER + ALT + ←↑→↓` | Resize window |
+| `SUPER + SHIFT + ←↑→↓` | Extend text selection across the document |
 | `SUPER + ALT + ←↑→↓` | Move window into group |
 | `SUPER + 1-9` | Switch to workspace |
 | `SUPER + SHIFT + 1-9` | Move window to workspace |
-| `SUPER + F` | Fullscreen |
+| `ALT + F` | Fullscreen |
 | `SUPER + CTRL + F` | Tiled fullscreen |
 | `SUPER + ALT + F` | Full width (maximized) |
 | `SUPER + TAB` | Next workspace |
 | `SUPER + SHIFT + TAB` | Previous workspace |
 | `SUPER + SHIFT + ALT + ←↑→↓` | Move workspace to monitor |
 | `SUPER + CTRL + ←↑→↓` | Resize window |
+| `SUPER + Q` | Close window |
 
 ### Mac Ctrl sends (new)
 
@@ -41,6 +44,7 @@ dofile(os.getenv("HOME") .. "/.config/omarchy-mac-bindings/bindings.lua")
 | `SUPER + B` | Send Ctrl+B |
 | `SUPER + D` | Send Ctrl+D |
 | `SUPER + E` | Send Ctrl+E |
+| `SUPER + F` | Send Ctrl+F |
 | `SUPER + G` | Send Ctrl+G |
 | `SUPER + H` | Send Ctrl+H |
 | `SUPER + I` | Send Ctrl+I |
@@ -59,6 +63,14 @@ dofile(os.getenv("HOME") .. "/.config/omarchy-mac-bindings/bindings.lua")
 | `SUPER + Y` | Send Ctrl+Y |
 | `SUPER + Z` | Send Ctrl+Z |
 | `SUPER + SHIFT + Z` | Redo (Ctrl+Shift+Z) |
+| `SUPER + SHIFT + ←` | Select to start of line |
+| `SUPER + SHIFT + →` | Select to end of line |
+| `SUPER + SHIFT + ↑` | Select to start of document |
+| `SUPER + SHIFT + ↓` | Select to end of document |
+| `ALT + SHIFT + ←` | Select previous word |
+| `ALT + SHIFT + →` | Select next word |
+| `ALT + SHIFT + ↑` | Select previous paragraph |
+| `ALT + SHIFT + ↓` | Select next paragraph |
 
 ### Mac Option characters
 
@@ -92,6 +104,7 @@ These Omarchy defaults are replaced by the Ctrl sends above. If you need any of 
 | Unbound binding | Was |
 |---|---|
 | `SUPER + W` | Close window |
+| `SUPER + F` | Fullscreen |
 | `SUPER + J` | Toggle window split |
 | `SUPER + O` | Pop window out |
 | `SUPER + T` | Toggle floating |
@@ -101,6 +114,10 @@ These Omarchy defaults are replaced by the Ctrl sends above. If you need any of 
 | `SUPER + L` | Toggle workspace layout |
 | `SUPER + K` | Keybindings help |
 | `SUPER + CTRL + Q` | Calculator |
+| `SUPER + SHIFT + ←↑→↓` | Swap window (moved to `SUPER + CTRL + ←↑→↓`) |
+| `SUPER + CTRL + ←→` | Group focus (moved to make room for swap) |
+| `SUPER + ALT + ←↑→↓` | Move window into group (now resize) |
+| `SUPER + [` / `SUPER + ]` | Resize with brackets (now `SUPER + ALT + arrows`) |
 
 ## How it works
 
