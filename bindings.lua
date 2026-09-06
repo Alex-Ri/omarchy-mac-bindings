@@ -33,6 +33,7 @@ hl.unbind("SUPER + P")            -- was: Pseudo window
 hl.unbind("SUPER + L")            -- was: Toggle workspace layout
 hl.unbind("SUPER + CTRL + Q")     -- was: Calculator
 hl.unbind("SUPER + CTRL + L")     -- was: Lock system (use SUPER + CTRL + Q instead)
+hl.unbind("SUPER + SHIFT + C")    -- was: Calendar → forwarded to Ctrl+Shift+C below
 hl.unbind("ALT + TAB")              -- was: double-bound in default (cycle_next + bring_to_top)
 hl.unbind("ALT + SHIFT + TAB")      -- same conflict
 hl.unbind("SUPER + F")            -- was: Fullscreen
@@ -85,6 +86,7 @@ o.bind("SUPER + W", "Send Ctrl+W",      send_shortcut_once("CTRL", "w"))
 o.bind("SUPER + Y", "Send Ctrl+Y",      send_shortcut_once("CTRL", "y"))
 o.bind("SUPER + Z", "Send Ctrl+Z",      send_shortcut_once("CTRL", "z"))
 o.bind("SUPER + SHIFT + Z", "Redo",     send_shortcut_once("CTRL + SHIFT", "z"))
+o.bind("SUPER + SHIFT + C", "Copy",     send_shortcut_once("CTRL + SHIFT", "c"))
 
 -- ---------------------------------------------------------------------------
 -- 3. Mac Option characters  (Alt + key → Option character)
