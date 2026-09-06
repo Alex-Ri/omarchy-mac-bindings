@@ -66,7 +66,7 @@ hl.unbind("SUPER + CTRL + SHIFT + code:21") -- was: Expand window down a lot
 o.bind("SUPER + A", "Select all",       send_shortcut_once("CTRL", "a"))
 o.bind("SUPER + B", "Send Ctrl+B",      send_shortcut_once("CTRL", "b"))
 o.bind("SUPER + D", "Send Ctrl+D",      send_shortcut_once("CTRL", "d"))
-o.bind("SUPER + E", "Send Ctrl+E",      send_shortcut_once("CTRL", "e"))
+o.bind("SUPER + E", "Files",             "nautilus")
 o.bind("SUPER + F", "Send Ctrl+F",      send_shortcut_once("CTRL", "f"))
 o.bind("SUPER + G", "Send Ctrl+G",      send_shortcut_once("CTRL", "g"))
 o.bind("SUPER + H", "Send Ctrl+H",      send_shortcut_once("CTRL", "h"))
