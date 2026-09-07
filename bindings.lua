@@ -87,6 +87,7 @@ o.bind("SUPER + Y", "Send Ctrl+Y",      send_shortcut_once("CTRL", "y"))
 o.bind("SUPER + Z", "Send Ctrl+Z",      send_shortcut_once("CTRL", "z"))
 o.bind("SUPER + SHIFT + Z", "Redo",     send_shortcut_once("CTRL + SHIFT", "z"))
 o.bind("SUPER + SHIFT + C", "Copy",     send_shortcut_once("CTRL + SHIFT", "c"))
+o.bind("SUPER + SHIFT + R", "Force reload", send_shortcut_once("CTRL + SHIFT", "r"))
 
 -- ---------------------------------------------------------------------------
 -- 3. Mac Option characters  (Alt + key → Option character)
